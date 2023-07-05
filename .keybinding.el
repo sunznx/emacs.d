@@ -1,3 +1,4 @@
+;; basic
 (define-key key-translation-map [?\C-h] [?\C-?])
 (fset 'quick-switch-buffer [?\C-x ?b return])
 
@@ -19,3 +20,7 @@
 
 ;; format-all
 (global-set-key (kbd "C-v C-n") 'format-all-region-or-buffer)
+
+;; paredit-mode
+(define-key paredit-mode-map (kbd "C-d") nil)
+(define-key paredit-mode-map (kbd "DEL") nil)
