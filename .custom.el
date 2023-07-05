@@ -10,3 +10,7 @@
 
 ;;; wakatime
 (global-wakatime-mode)
+
+
+;;; hungry-delete
+(global-hungry-delete-mode)

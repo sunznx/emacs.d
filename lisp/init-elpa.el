@@ -365,6 +365,7 @@ If NO-REFRESH is nil, `package-refresh-contents' is called."
 ;; }}
 
 (require-package 'wakatime-mode)
+(require-package 'hungry-delete)
 
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
