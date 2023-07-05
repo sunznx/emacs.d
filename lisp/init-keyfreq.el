@@ -1,10 +1,9 @@
 ;; -*- coding: utf-8; lexical-binding: t; -*-
 
-(local-require 'keyfreq)
-
 (defun turnon-keyfreq-mode ()
   "Turn on keyfreq."
   (interactive)
+  (local-require 'keyfreq)
   ;; Fire up keyfreq a few seconds later to start up emacs faster
   (my-run-with-idle-timer 4 (lambda ()
                                (keyfreq-mode 1)
