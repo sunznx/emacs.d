@@ -119,7 +119,8 @@
     zoutline
     company-c-headers
     graphql-mode
-    company-statistics)
+    company-statistics
+    wakatime-mode)
   "Packages to install from melpa-unstable.")
 
 (defvar melpa-stable-banned-packages nil
@@ -362,6 +363,8 @@ If NO-REFRESH is nil, `package-refresh-contents' is called."
 ;; {{ trivial packages which has extra dependency
 (require-package 'emms)
 ;; }}
+
+(require-package 'wakatime-mode)
 
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))

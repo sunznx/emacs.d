@@ -6,3 +6,7 @@
 
 ;;; exec-path-from-shell
 (setq exec-path-from-shell-check-startup-files nil)
+
+
+;;; wakatime
+(global-wakatime-mode)
