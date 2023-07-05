@@ -23,3 +23,9 @@
 ;;; transient-mark/delete-selection
 (transient-mark-mode 1)
 (delete-selection-mode 1)
+
+
+;;; keybinding
+(defconst my-keybinding-setup-file (concat my-emacs-d ".keybinding.el")
+      "My keybinding setup file.")
+(load my-keybinding-setup-file t nil)
