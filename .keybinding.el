@@ -16,3 +16,6 @@
 (global-set-key (kbd "C-S-k") 'duplicate-thing)
 
 (global-unset-key (kbd "C-v"))
+
+;; format-all
+(global-set-key (kbd "C-v C-n") 'format-all-region-or-buffer)
