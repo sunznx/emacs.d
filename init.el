@@ -163,7 +163,9 @@
 
     ;; my personal setup, other major-mode specific setup need it.
     ;; It's dependent on *.el in `my-site-lisp-dir'
-    (my-run-with-idle-timer 1 (lambda () (load "~/.custom.el" t nil)))))
+    (defconst my-custom-setup-file (concat my-emacs-d ".custom.el")
+      "My custom setup file.")
+    (my-run-with-idle-timer 1 (lambda () (load my-custom-setup-file t nil)))))
 
 
 ;; @see https://www.reddit.com/r/emacs/comments/55ork0/is_emacs_251_noticeably_slower_than_245_on_windows/
