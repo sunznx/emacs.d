@@ -4,6 +4,10 @@
 (turnon-keyfreq-mode)
 
 
+;;; recentf
+(setq recentf-save-file (concat my-emacs-d ".recentf"))
+
+
 ;;; exec-path-from-shell
 (setq exec-path-from-shell-check-startup-files nil)
 
