@@ -18,3 +18,8 @@
 
 ;;; hungry-delete
 (global-hungry-delete-mode)
+
+
+;;; transient-mark/delete-selection
+(transient-mark-mode 1)
+(delete-selection-mode 1)
