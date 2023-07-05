@@ -120,7 +120,8 @@
     company-c-headers
     graphql-mode
     company-statistics
-    wakatime-mode)
+    wakatime-mode
+    duplicate-thing)
   "Packages to install from melpa-unstable.")
 
 (defvar melpa-stable-banned-packages nil
@@ -367,6 +368,7 @@ If NO-REFRESH is nil, `package-refresh-contents' is called."
 (require-package 'wakatime-mode)
 (require-package 'hungry-delete)
 (require-package 'multiple-cursors)
+(require-package 'duplicate-thing)
 
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
