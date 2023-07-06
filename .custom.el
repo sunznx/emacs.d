@@ -5,6 +5,7 @@
 
 
 ;;; recentf
+(setq recentf-max-saved-items 204800)
 (setq recentf-save-file (concat my-emacs-d ".recentf"))
 
 
