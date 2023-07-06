@@ -32,6 +32,9 @@
 (unless (server-running-p)
     (server-start))
 
+;;; scratch
+(setq initial-major-mode 'fundamental-mode)
+
 ;;; keybinding
 (defconst my-keybinding-setup-file (concat my-emacs-d ".keybinding.el")
   "My keybinding setup file.")
