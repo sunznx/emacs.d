@@ -18,6 +18,8 @@
 
 ;;; hungry-delete
 (global-hungry-delete-mode)
+(setq hungry-delete-except-modes
+      '(help-mode minibuffer-mode minibuffer-inactive-mode calc-mode))
 
 
 ;;; transient-mark/delete-selection
@@ -32,5 +34,5 @@
 
 ;;; keybinding
 (defconst my-keybinding-setup-file (concat my-emacs-d ".keybinding.el")
-      "My keybinding setup file.")
+  "My keybinding setup file.")
 (load my-keybinding-setup-file t nil)

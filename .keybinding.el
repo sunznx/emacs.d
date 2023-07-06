@@ -7,6 +7,7 @@
 
 ;; counsel
 (global-set-key (kbd "C-x f") 'counsel-recentf)
+(global-set-key (kbd "C-x d") 'counsel-dired)
 
 ;; mark-all-like-this
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
@@ -22,5 +23,12 @@
 (global-set-key (kbd "C-v C-n") 'format-all-region-or-buffer)
 
 ;; paredit-mode
-(define-key paredit-mode-map (kbd "C-d") nil)
-(define-key paredit-mode-map (kbd "DEL") nil)
+(eval-after-load "paredit"
+  '(progn
+     (define-key paredit-mode-map (kbd "C-d") nil)
+     (define-key paredit-mode-map (kbd "DEL") nil)))
+
+;; ivy-minibuffer
+(eval-after-load "ivy"
+  '(progn
+     (define-key ivy-minibuffer-map (kbd "C-i") 'ivy-alt-done)))
