@@ -25,6 +25,11 @@
 (delete-selection-mode 1)
 
 
+;;; start server
+(require 'server)
+(unless (server-running-p)
+    (server-start))
+
 ;;; keybinding
 (defconst my-keybinding-setup-file (concat my-emacs-d ".keybinding.el")
       "My keybinding setup file.")
