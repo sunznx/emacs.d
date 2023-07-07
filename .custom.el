@@ -36,6 +36,9 @@
 ;;; scratch
 (setq initial-major-mode 'fundamental-mode)
 
+;;; window-numbering
+(window-numbering-mode 1)
+
 ;;; keybinding
 (defconst my-keybinding-setup-file (concat my-emacs-d ".keybinding.el")
   "My keybinding setup file.")

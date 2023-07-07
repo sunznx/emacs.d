@@ -371,6 +371,7 @@ If NO-REFRESH is nil, `package-refresh-contents' is called."
 (require-package 'multiple-cursors)
 (require-package 'duplicate-thing)
 (require-package 'format-all)
+(require-package 'window-numbering)
 
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
