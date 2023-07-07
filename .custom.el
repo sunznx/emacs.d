@@ -39,6 +39,11 @@
 ;;; window-numbering
 (window-numbering-mode 1)
 
+;;; functions
+(defconst my-function-setup-file (concat my-emacs-d ".function.el")
+  "My function setup file.")
+(load my-function-setup-file t nil)
+
 ;;; keybinding
 (defconst my-keybinding-setup-file (concat my-emacs-d ".keybinding.el")
   "My keybinding setup file.")
